@@ -2,6 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:rim="http://www.blackberry.com/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.example.myplugin.CalendarPlugin"
     version="0.0.1">
     <name>Calendar Plugin</name>
     <description>Cordova Calendar Plugin</description>
