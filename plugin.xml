@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:rim="http://www.blackberry.com/ns/widgets"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    version="0.0.1">
+    <name>Calendar Plugin</name>
+    <description>Cordova Calendar Plugin</description>
+    <license>Modified BSD</license>
+    <keywords>cordova,calendar,android</keywords>
+
+    <js-module src="www/js/calendar.js" name="calendar">
+        <clobbers target="calendar" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="CalendarPlugin" >
+				<param name="android-package" value="com.example.myplugin.CalendarPlugin"/>
+			</feature>
+		</config-file>
+
+		<config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="android.permission.READ_CALENDAR" />
+			<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+		</config-file>	
+
+		<source-file src="src/android/CalendarPlugin.java" target-dir="src/com/example/myplugin" />
+    </platform>
+</plugin>
