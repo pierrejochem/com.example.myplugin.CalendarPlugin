@@ -5,7 +5,7 @@ Introduction
 ------------
 cordova calendar plugin
 
-Example taken from: http://devgirl.org/2013/07/17/tutorial-how-to-write-a-phonegap-plugin-for-android/
+Example taken from: http://devgirl.org/2013/07/17/tutorial-how-to-write-a-phonegap-plugin-for-android/ but with corrected imports and a plugin.xml definition file.
 
 Basic Usage
 -------
