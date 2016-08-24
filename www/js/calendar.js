@@ -1,6 +1,6 @@
 var calendarPlugin = function() {};
 
-var calendarPlugin.prototype.createEvent: function(title, location, notes, startDate, endDate, successCallback, errorCallback) {
+calendarPlugin.prototype.createEvent: function(title, location, notes, startDate, endDate, successCallback, errorCallback) {
         cordova.exec(
             successCallback, // success callback function
             errorCallback, // error callback function
