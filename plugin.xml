@@ -8,6 +8,7 @@
     <description>Cordova Calendar Plugin</description>
     <license>Modified BSD</license>
     <keywords>cordova,calendar,android</keywords>
+    <repo>https://github.com/pierrejochem/com.example.myplugin.CalendarPlugin.git</repo>
 
     <js-module src="www/js/calendar.js" name="calendar">
         <clobbers target="calendar" />
