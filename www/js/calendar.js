@@ -1,5 +1,6 @@
-var calendarPlugin = {
-    createEvent: function(title, location, notes, startDate, endDate, successCallback, errorCallback) {
+var calendarPlugin = function() {};
+
+var calendarPlugin.prototype.createEvent: function(title, location, notes, startDate, endDate, successCallback, errorCallback) {
         cordova.exec(
             successCallback, // success callback function
             errorCallback, // error callback function
@@ -13,5 +14,7 @@ var calendarPlugin = {
                 "endTimeMillis": endDate.getTime()
             }]
         ); 
-     }
 }
+
+if(!window.plugins) window.plugins = {};
+window.plugins.calendarplugin = new calendarPlugin();
